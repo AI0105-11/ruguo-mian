@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>如狗殼以 一叫好棉 — 業主確認單</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  background: #f5f5f5;
+  color: #111;
+  line-height: 1.7;
+  padding: 20px;
+}
+.page {
+  max-width: 860px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 40px 48px;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,.06);
+}
+h1 { font-size: 22px; text-align: center; margin-bottom: 6px; }
+.subtitle { text-align: center; font-size: 17px; font-weight: 700; margin-bottom: 4px; }
+.sub-note { text-align: center; color: #808080; font-size: 12px; margin-bottom: 20px; }
+.meta { color: #808080; font-size: 12px; margin-bottom: 6px; }
+.part-title {
+  font-size: 20px; font-weight: 700; padding: 12px 0;
+  border-top: 3px solid #2563eb; border-bottom: 1px solid #e5e7eb;
+  margin: 36px 0 20px; color: #1e40af;
+}
+.part-title.part2 { border-top-color: #d97706; color: #b45309; }
+h2 { font-size: 16px; font-weight: 700; margin: 24px 0 10px; color: #111; }
+h3 { font-size: 14px; font-weight: 700; margin: 14px 0 6px; }
+p { margin: 6px 0; font-size: 14px; }
+.explain { color: #808080; font-size: 12px; margin: 6px 0; }
+ul { margin: 6px 0 6px 20px; }
+li { font-size: 14px; margin: 3px 0; }
+table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 13px; }
+th, td { border: 1px solid #d1d5db; padding: 7px 10px; text-align: left; vertical-align: top; }
+th { background: #dbeafe; font-weight: 700; }
+tr:nth-child(even) td { background: #f9fafb; }
+a { color: #2563eb; word-break: break-all; }
+.block { background: #f9fafb; border-left: 3px solid #d1d5db; padding: 10px 14px; margin: 8px 0; font-size: 13px; white-space: pre-wrap; }
+.block.new { border-left-color: #10b981; background: #ecfdf5; }
+.block.old { border-left-color: #9ca3af; }
+.q-section { background: #fffbeb; border: 1px solid #fde68a; border-radius: 8px; padding: 16px 20px; margin: 14px 0; }
+.q-title { font-size: 15px; font-weight: 700; color: #92400e; margin-bottom: 8px; }
+.radio-group, .check-group { margin: 6px 0; }
+.radio-group label, .check-group label { display: block; padding: 4px 0; font-size: 14px; cursor: pointer; }
+.radio-group input, .check-group input { margin-right: 8px; transform: translateY(1px); }
+.radio-group input[type="radio"]:checked + span, .check-group input[type="checkbox"]:checked + span { font-weight: 500; }
+.inline-input { border: none; border-bottom: 1px solid #9ca3af; background: transparent; padding: 2px 6px; width: 220px; font-size: 14px; font-family: inherit; }
+.inline-input:focus { outline: none; border-bottom-color: #2563eb; }
+.inline-input.wide { width: 400px; }
+.prop-row { margin: 10px 0; padding: 8px 12px; background: #fff; border: 1px solid #e5e7eb; border-radius: 6px; }
+.prop-row label { display: inline-block; margin-right: 14px; padding: 3px 0; font-size: 13px; cursor: pointer; }
+.prop-row label input { margin-right: 5px; }
+.prop-title { font-weight: 700; font-size: 13px; margin-bottom: 4px; color: #374151; }
+textarea { width: 100%; min-height: 60px; padding: 8px; border: 1px solid #d1d5db; border-radius: 4px; font-family: inherit; font-size: 13px; resize: vertical; }
+.action-bar { position: sticky; bottom: 20px; margin: 30px auto 0; max-width: 860px; text-align: center; padding: 14px; background: #fff; border: 1px solid #e5e7eb; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,.1); }
+.btn { padding: 12px 32px; background: #2563eb; color: #fff; border: none; border-radius: 6px; font-size: 15px; font-weight: 700; cursor: pointer; font-family: inherit; }
+.btn:hover { background: #1d4ed8; }
+.btn:active { transform: scale(.97); }
+.btn-hint { font-size: 12px; color: #6b7280; margin-top: 8px; }
+.owner-input-row { display: flex; gap: 10px; margin: 10px 0; flex-wrap: wrap; }
+.owner-input-row label { font-size: 13px; color: #374151; }
+.owner-input-row input { flex: 1; padding: 6px 10px; border: 1px solid #d1d5db; border-radius: 4px; font-family: inherit; font-size: 13px; min-width: 180px; }
+@media print {
+  body { background: #fff; padding: 0; }
+  .page { box-shadow: none; border-radius: 0; padding: 20px; }
+  .action-bar { display: none; }
+  .q-section { break-inside: avoid; }
+}
+.pdf-mode .action-bar { display: none !important; }
+</style>
+</head>
+<body>
+
+<div class="page" id="page">
+
+<h1>如狗殼以 一叫好棉</h1>
+<div class="subtitle">GBP 優化項目 — 業主確認單</div>
+<div class="sub-note">（SOP v2 Step 7 二次分析 — 首次確認）</div>
+
+<p class="meta">日期：2026-04-16</p>
+<p class="meta">適用範圍：如狗殼以 一叫好棉（新竹市東區關新一街 26 號）</p>
+
+<div class="owner-input-row">
+  <label>姓名（選填）：</label>
+  <input type="text" id="ownerName" placeholder="">
+  <label>日期：</label>
+  <input type="text" id="ownerDate" placeholder="">
+</div>
+
+<!-- ================ PART 1 ================ -->
+<div class="part-title">PART 1 — 已完成調整</div>
+<p class="explain">此為首次分析，尚未執行任何調整。以下 PART 2 為分析後的優化建議，待您確認同意後才會執行。</p>
+<p style="color:#6b7280; font-size:14px; padding:20px 0;">（首次確認，尚無已完成項目）</p>
+
+<!-- ================ PART 2 ================ -->
+<div class="part-title part2">PART 2 — 需確認事項</div>
+<p class="explain">請針對以下內容回覆，也可以用簡短文字填入，完成後點最下方按鈕匯出 PDF 回傳給我們。</p>
+
+<!-- 優先關鍵詞 -->
+<div class="q-section">
+  <div class="q-title">本次優化的 7 組核心關鍵詞</div>
+  <p class="explain">以下是我們針對安親/住宿/美容業務，排除「如狗殼以」等品牌名稱後，篩選出最重要的 7 組搜尋關鍵詞。這些詞是新竹地區飼主在 Google Maps 上尋找寵物服務時最常用的搜尋方式，後續所有優化動作都會以這些詞為核心方向。</p>
+
+  <table>
+    <tr><th>#</th><th>關鍵詞</th><th>選用理由</th></tr>
+    <tr><td>1</td><td>新竹狗安親</td><td>新竹飼主找日間照顧最直覺的搜尋方式，直接對應店內主力安親日托服務</td></tr>
+    <tr><td>2</td><td>新竹寵物安親</td><td>「寵物安親」搜尋量大於「狗安親」，涵蓋更廣的潛在客群（含貓飼主）</td></tr>
+    <tr><td>3</td><td>新竹寵物美容</td><td>美容為店內三大核心服務之一，新竹地區此詞搜尋量穩定，是必須覆蓋的服務詞</td></tr>
+    <tr><td>4</td><td>新竹寵物住宿</td><td>住宿服務對應飼主出差/旅行需求，搜尋者消費意圖明確、客單價高</td></tr>
+    <tr><td>5</td><td>新竹寵物旅館</td><td>「旅館」是「住宿」的同義搜尋，部分飼主習慣搜「旅館」而非「住宿」，需同時覆蓋</td></tr>
+    <tr><td>6</td><td>新竹寵物美容推薦</td><td>帶「推薦」的搜尋代表消費者已在比較選擇階段，轉換成客戶的機率較高</td></tr>
+    <tr><td>7</td><td>新竹寵物安親推薦</td><td>同上，「安親+推薦」組合代表正在做決定的飼主，是高轉換率搜尋詞</td></tr>
+  </table>
+
+  <p class="explain">簡單來說：#1-2 覆蓋安親日托需求、#3 覆蓋美容需求、#4-5 覆蓋住宿需求、#6-7 覆蓋正在做決定的比較型消費者。另外，「棉花面紗犬」相關搜尋詞在 Google Maps 上目前沒有任何商家出現（零競爭），會同步在描述中埋入以搶佔先機。</p>
+  <p>請確認：</p>
+  <div class="radio-group">
+    <label><input type="radio" name="qkw" value="A"><span>A. 了解，同意以上關鍵詞作為優化方向</span></label>
+    <label><input type="radio" name="qkw" value="B"><span>B. 有想補充或調整的詞：</span><input type="text" class="inline-input wide" id="qkw_note" placeholder="例如：想加「新竹狗旅館」..."></label>
+  </div>
+</div>
+
+<!-- Q1 -->
+<div class="q-section">
+  <div class="q-title">Q1. 商家描述擴充（80 字 → 400-600 字）</div>
+  <p class="explain">現況：描述僅 80 字，含 emoji，完全未提及「安親」「住宿」「美容」「棉花面紗犬」「Paris Dog」等核心服務。Google Maps 無法將商家與這些搜尋意圖建立關聯。</p>
+  <p><b>建議描述草稿（約 470 字）：</b></p>
+  <div class="block new">如狗殼以一叫好棉是北歐森林品牌旗下、位於新竹東區關新一街的寵物安親住宿複合店，提供寵物安親日托、寵物住宿、寵物美容三大核心服務。
+
+安親日托採開放式空間設計，讓毛孩在專人看護下自在活動與社交，適合雙薪家庭與日間無法陪伴的飼主。住宿服務提供獨立舒適的過夜空間，搭配每日活動與健康觀察回報，讓飼主出遠門也能安心。美容服務涵蓋洗澡、造型與 SPA，由專業美容師依犬種特性量身調整。
+
+我們同時是台灣唯一的棉花面紗犬（Coton de Tulear）培育者，這個源自馬達加斯加的珍稀犬種以低過敏、親人、不掉毛著稱，特別適合有過敏體質或公寓住戶的家庭。每隻棉花面紗犬皆附完整健康檢測與飼養指導。
+
+店內同步引進 Paris Dog 韓國寵物用品，提供獨家代理的高品質寵物生活用品選購。
+
+如狗殼以一叫好棉持有特寵業繁字第 R1140010 號合法繁殖許可，歡迎預約參觀或洽詢安親體驗。</div>
+  <p class="explain">注意：「棉花面紗犬」在 Google Maps 搜尋結果為零競爭，描述埋入後即可獨佔此搜尋。</p>
+  <p>請問：</p>
+  <div class="radio-group">
+    <label><input type="radio" name="q1" value="A"><span>A. 內容沒問題，可以使用</span></label>
+    <label><input type="radio" name="q1" value="B"><span>B. 需要調整（請說明）：</span></label>
+  </div>
+  <textarea id="q1_note" placeholder="如有想補充的品牌特色、想強調的重點、或不想出現的內容，請寫在這裡..."></textarea>
+</div>
+
+<!-- Q2 -->
+<div class="q-section">
+  <div class="q-title">Q2. GBP 網站連結</div>
+  <p class="explain">現況：GBP 網站欄位為空。經搜尋確認，此店目前無獨立官網，僅有母品牌 norest.com.tw、parisdog.com.tw 與 Instagram @if_dog_can / @coton_good_sleep。</p>
+  <p>請問：</p>
+  <div class="radio-group">
+    <label><input type="radio" name="q2" value="A"><span>A. 先用 Instagram 頁面代替：https://www.instagram.com/if_dog_can/</span></label>
+    <label><input type="radio" name="q2" value="B"><span>B. norest.com.tw 有相關子頁面：</span><input type="text" class="inline-input wide" id="q2_url" placeholder="https://..."></label>
+    <label><input type="radio" name="q2" value="C"><span>C. 有其他網址想放：</span><input type="text" class="inline-input wide" id="q2_other" placeholder="https://..."></label>
+    <label><input type="radio" name="q2" value="D"><span>D. 暫不設定</span></label>
+  </div>
+</div>
+
+<!-- Q3 -->
+<div class="q-section">
+  <div class="q-title">Q3. GBP 服務項目新增</div>
+  <p class="explain">現況（已確認後台）：後台目前僅勾選「提供門市服務」，無其他服務項目。</p>
+  <p><b>建議新增的服務方向：</b></p>
+  <ul>
+    <li>寵物安親日托</li>
+    <li>寵物住宿</li>
+    <li>寵物美容（洗澡 / 造型 / SPA）</li>
+    <li>住宿訓練（如有此服務）</li>
+    <li>寵物用品零售（Paris Dog 韓國進口）</li>
+    <li>棉花面紗犬培育諮詢</li>
+  </ul>
+  <p class="explain">每項服務會包含名稱、描述、價格（如您同意公開），並自然融入搜尋關鍵字。</p>
+  <p>請問：</p>
+  <div class="radio-group">
+    <label><input type="radio" name="q3" value="A"><span>A. 同意上述方向</span></label>
+    <label><input type="radio" name="q3" value="B"><span>B. 有些服務不想列出：</span><input type="text" class="inline-input wide" id="q3_exclude" placeholder="請填入不想列出的服務..."></label>
+    <label><input type="radio" name="q3" value="C"><span>C. 有其他服務要補充：</span><input type="text" class="inline-input wide" id="q3_add" placeholder="___________"></label>
+  </div>
+</div>
+
+<!-- Q4 -->
+<div class="q-section">
+  <div class="q-title">Q4. 類別調整建議</div>
+  <p class="explain">現況（已確認後台）：主類別為「寵物寄宿服務」，目前無任何次類別。</p>
+
+  <table>
+    <tr><th>商家</th><th>Maps 前台類別</th><th>評論</th><th>排名表現</th></tr>
+    <tr><td>本店（如狗殼以）</td><td>寵物寄宿服務（無次類別）</td><td>5.0⭐ / 14 則</td><td>安親 #6-7，其餘全滅</td></tr>
+    <tr><td>揪甘心寵物旅館</td><td>寵物寄養服務</td><td>4.9⭐ / 926 則</td><td>安親/住宿/旅館 #1</td></tr>
+    <tr><td>Good Day 寵物旅館</td><td>寵物店</td><td>4.9⭐ / 250 則</td><td>安親/住宿 Top3</td></tr>
+    <tr><td>沐語寵物美容澡堂</td><td>寵物美容師</td><td>4.9⭐ / 90 則</td><td>美容/洗澡 #1</td></tr>
+    <tr><td>星星波妮澡堂</td><td>寵物保姆</td><td>4.9⭐ / 87 則</td><td>美容/安親 Top5</td></tr>
+  </table>
+
+  <p><b>調整方向：</b></p>
+  <ul>
+    <li>主類別維持「寵物寄宿服務」— 安親/住宿是主力業務，不做變動</li>
+    <li>新增次類別（目前為空，全部需新增）：「寵物美容師」（覆蓋美容搜尋，沐語用此類別佔據美容詞 #1）、「寵物用品店」（覆蓋 Paris Dog 用品搜尋）、「寵物繁殖場」（覆蓋棉花面紗犬繁育搜尋）</li>
+  </ul>
+  <p class="explain">主類別變動風險高，不做調整。次類別新增為低風險操作，可有效擴大搜尋覆蓋面。</p>
+</div>
+
+<!-- Q5 -->
+<div class="q-section">
+  <div class="q-title">Q5. 後台屬性確認</div>
+  <p class="explain">以下為 GBP 後台目前已設定的屬性（藍色標記），以及尚未設定的項目。請確認實際狀況，我們會據此補齊。</p>
+
+  <div class="prop-row">
+    <div class="prop-title">5-1 付款方式 <span style="color:#ef4444;">（後台未設定）</span></div>
+    <label><input type="checkbox" name="pay" value="現金">現金</label>
+    <label><input type="checkbox" name="pay" value="信用卡">信用卡</label>
+    <label><input type="checkbox" name="pay" value="LINE Pay">LINE Pay</label>
+    <label><input type="checkbox" name="pay" value="街口支付">街口支付</label>
+    <label><input type="checkbox" name="pay" value="Apple Pay">Apple Pay</label>
+    <label><input type="checkbox" name="pay" value="Google Pay">Google Pay</label>
+    <label><input type="checkbox" name="pay" value="轉帳">轉帳匯款</label>
+    <label><input type="checkbox" name="pay" value="other">其他：<input type="text" class="inline-input" id="pay_other"></label>
+  </div>
+
+  <div class="prop-row">
+    <div class="prop-title">5-2 停車場 <span style="color:#2563eb;">（後台已設定：收費停車場、免費停車場、收費路邊停車格）</span></div>
+    <p class="explain" style="margin-bottom:6px;">以上已在後台勾選。是否正確？</p>
+    <label><input type="radio" name="park" value="正確">以上正確，不需修改</label>
+    <label><input type="radio" name="park" value="需調整">需調整為：<input type="text" class="inline-input wide" id="park_note" placeholder="請說明..."></label>
+  </div>
+
+  <div class="prop-row">
+    <div class="prop-title">5-3 兒童友善 <span style="color:#ef4444;">（後台未設定）</span></div>
+    <label><input type="checkbox" name="kid" value="歡迎兒童">歡迎兒童</label>
+    <label><input type="checkbox" name="kid" value="無">不特別適合兒童</label>
+  </div>
+
+  <div class="prop-row">
+    <div class="prop-title">5-4 無障礙程度 <span style="color:#ef4444;">（後台未設定）</span></div>
+    <label><input type="checkbox" name="access" value="入口">無障礙入口</label>
+    <label><input type="checkbox" name="access" value="停車">無障礙停車位</label>
+    <label><input type="checkbox" name="access" value="洗手間">無障礙洗手間</label>
+    <label><input type="checkbox" name="access" value="電梯">無障礙電梯</label>
+    <label><input type="checkbox" name="access" value="無">以上皆無</label>
+  </div>
+
+  <div class="prop-row">
+    <div class="prop-title">5-5 設施 <span style="color:#ef4444;">（後台未設定）</span></div>
+    <label><input type="checkbox" name="fac" value="洗手間">洗手間</label>
+    <label><input type="checkbox" name="fac" value="WiFi">免費 Wi-Fi</label>
+    <label><input type="checkbox" name="fac" value="等候區">等候區</label>
+    <label><input type="checkbox" name="fac" value="冷氣">冷氣空調</label>
+    <label><input type="checkbox" name="fac" value="無">以上皆無</label>
+  </div>
+
+  <div class="prop-row">
+    <div class="prop-title">5-6 規劃 <span style="color:#ef4444;">（後台未設定）</span></div>
+    <label><input type="checkbox" name="plan" value="建議預約">建議預約</label>
+    <label><input type="checkbox" name="plan" value="現場訪客">接受現場訪客</label>
+    <label><input type="checkbox" name="plan" value="限預約">限預約制</label>
+  </div>
+
+  <div class="prop-row">
+    <div class="prop-title">5-7 寵物相關（可複選）</div>
+    <label><input type="checkbox" name="pet" value="不關籠">安親不關籠</label>
+    <label><input type="checkbox" name="pet" value="有監控">有即時監控畫面</label>
+    <label><input type="checkbox" name="pet" value="有接送">提供接送服務</label>
+    <label><input type="checkbox" name="pet" value="無接送">無接送服務</label>
+    <label><input type="checkbox" name="pet" value="other">其他：<input type="text" class="inline-input" id="pet_other"></label>
+  </div>
+
+  <div class="prop-row">
+    <div class="prop-title">5-8 客層族群 <span style="color:#ef4444;">（後台未設定）</span></div>
+    <label><input type="checkbox" name="aud" value="LGBTQ">LGBTQ+ 友善</label>
+    <label><input type="checkbox" name="aud" value="跨性別">跨性別安全場所</label>
+    <label><input type="checkbox" name="aud" value="女性經營">女性經營</label>
+    <label><input type="checkbox" name="aud" value="other">其他：<input type="text" class="inline-input" id="aud_other"></label>
+  </div>
+
+  <div class="prop-row">
+    <div class="prop-title">5-9 服務項目 <span style="color:#2563eb;">（後台已設定：提供門市服務）</span></div>
+    <p class="explain">目前僅勾選「提供門市服務」，暫無需調整。</p>
+  </div>
+
+  <div class="prop-row">
+    <div class="prop-title">5-10 其他補充</div>
+    <textarea id="q5_other" placeholder="例如：提供試住服務、有隔離觀察區、可接受特殊犬種..."></textarea>
+  </div>
+</div>
+
+<!-- Q6 -->
+<div class="q-section">
+  <div class="q-title">Q6. 照片上傳狀態確認</div>
+  <p class="explain">GBP 照片充足度直接影響排名與信任感。請勾選目前已有的照片類型。</p>
+
+  <table>
+    <tr><th>照片類型</th><th>建議張數</th><th>目前狀態</th></tr>
+    <tr><td>封面照（品牌形象 / Logo）</td><td>1-2</td><td>
+      <label><input type="radio" name="ph_01" value="已有">已有</label>
+      <label><input type="radio" name="ph_01" value="尚未有">尚未有</label>
+    </td></tr>
+    <tr><td>外觀照（店面 / 招牌 / 入口）</td><td>3</td><td>
+      <label><input type="radio" name="ph_02" value="已有">已有</label>
+      <label><input type="radio" name="ph_02" value="尚未有">尚未有</label>
+    </td></tr>
+    <tr><td>安親空間照（日托環境 / 活動區）</td><td>5</td><td>
+      <label><input type="radio" name="ph_03" value="已有">已有</label>
+      <label><input type="radio" name="ph_03" value="尚未有">尚未有</label>
+    </td></tr>
+    <tr><td>住宿環境照（房間 / 設施）</td><td>3-5</td><td>
+      <label><input type="radio" name="ph_04" value="已有">已有</label>
+      <label><input type="radio" name="ph_04" value="尚未有">尚未有</label>
+    </td></tr>
+    <tr><td>美容前後對比照</td><td>3-5</td><td>
+      <label><input type="radio" name="ph_05" value="已有">已有</label>
+      <label><input type="radio" name="ph_05" value="尚未有">尚未有</label>
+    </td></tr>
+    <tr><td>棉花面紗犬照片</td><td>3-5</td><td>
+      <label><input type="radio" name="ph_06" value="已有">已有</label>
+      <label><input type="radio" name="ph_06" value="尚未有">尚未有</label>
+    </td></tr>
+    <tr><td>Paris Dog 韓國用品陳列照</td><td>3</td><td>
+      <label><input type="radio" name="ph_07" value="已有">已有</label>
+      <label><input type="radio" name="ph_07" value="尚未有">尚未有</label>
+    </td></tr>
+    <tr><td>安親日常照（毛孩互動）</td><td>5</td><td>
+      <label><input type="radio" name="ph_08" value="已有">已有</label>
+      <label><input type="radio" name="ph_08" value="尚未有">尚未有</label>
+    </td></tr>
+    <tr><td>團隊 / Ranie 老師照</td><td>2</td><td>
+      <label><input type="radio" name="ph_09" value="已有">已有</label>
+      <label><input type="radio" name="ph_09" value="尚未有">尚未有</label>
+    </td></tr>
+  </table>
+  <p class="explain">標示「尚未有」的類別，再麻煩安排拍攝或整理後提供，我們收到素材後會上傳到 GBP。</p>
+</div>
+
+<!-- Q7 -->
+<div class="q-section">
+  <div class="q-title">Q7. 服務範圍設定</div>
+  <p>GBP「服務範圍」將設定為：<b>一個主要縣市 + 一個行政區 + 附近 3 個里</b>，此為所有代管商家的統一在地搜尋策略，有助強化附近區域的搜尋排名。</p>
+</div>
+
+<!-- Q8 -->
+<div class="q-section">
+  <div class="q-title">Q8. 業務相關確認</div>
+  <p class="explain">以下問題幫助我們更精準地優化 GBP 內容，請簡短回覆即可。</p>
+
+  <h3>8-1. 揪甘心、Good Day、沐語是否為直接競爭對手？有什麼差異化策略？</h3>
+  <textarea id="q8_1" placeholder="請簡述..."></textarea>
+
+  <h3>8-2. Paris Dog 代理範圍？是否有線上商城計畫？</h3>
+  <textarea id="q8_2" placeholder="請簡述..."></textarea>
+
+  <h3>8-3. 棉花面紗犬目前待售隻數？是否長期培育？</h3>
+  <textarea id="q8_3" placeholder="例如：目前有 2 隻待售，長期培育中..."></textarea>
+
+  <h3>8-4. 安親與住宿接收量上限？（幾隻？是否常滿？）</h3>
+  <textarea id="q8_4" placeholder="請簡述..."></textarea>
+
+  <h3>8-5. 訓練型安親和訓練中心（北歐森林訓練中心）如何分工？</h3>
+  <textarea id="q8_5" placeholder="請簡述..."></textarea>
+
+  <h3>8-6. 預約制度目前狀況？（客戶反映難用，是否有改善計畫？）</h3>
+  <textarea id="q8_6" placeholder="請簡述..."></textarea>
+
+  <h3>8-7. 接送服務是否有計畫？</h3>
+  <div class="radio-group">
+    <label><input type="radio" name="q8_7" value="有"><span>有計畫，預計時間：</span><input type="text" class="inline-input" id="q8_7_time" placeholder="___________"></label>
+    <label><input type="radio" name="q8_7" value="評估"><span>考慮中</span></label>
+    <label><input type="radio" name="q8_7" value="無"><span>暫無計畫</span></label>
+  </div>
+
+  <h3>8-8. 是否有考慮獨立官網？（目前外部連結僅 2/25）</h3>
+  <div class="radio-group">
+    <label><input type="radio" name="q8_8" value="有"><span>有計畫</span></label>
+    <label><input type="radio" name="q8_8" value="用母品牌"><span>會用 norest.com.tw / parisdog.com.tw 子頁面</span></label>
+    <label><input type="radio" name="q8_8" value="暫不"><span>暫時沒有計畫</span></label>
+  </div>
+</div>
+
+<!-- 其他想說 -->
+<div class="q-section">
+  <div class="q-title">其他想告訴我們的（選填）</div>
+  <textarea id="comments" placeholder="有任何補充、疑問或想討論的事情，請寫在這裡..."></textarea>
+</div>
+
+</div><!-- /page -->
+
+<!-- Action bar -->
+<div class="action-bar">
+  <button class="btn" onclick="exportPDF()">匯出 PDF 回傳</button>
+  <div class="btn-hint">按下按鈕會產生 PDF 檔，請下載後以 LINE / Email 傳回給我們</div>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script>
+(function(){
+  const d = new Date();
+  document.getElementById('ownerDate').value = d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+})();
+
+const FORM_KEY = 'ruguo_mian_form_v1';
+function saveState() {
+  const state = {};
+  document.querySelectorAll('input, textarea').forEach(el => {
+    const k = el.id || el.name;
+    if (!k) return;
+    if (el.type === 'checkbox' || el.type === 'radio') {
+      if (el.checked) state[el.name + '__' + el.value] = true;
+    } else {
+      if (el.id) state[el.id] = el.value;
+    }
+  });
+  localStorage.setItem(FORM_KEY, JSON.stringify(state));
+}
+function loadState() {
+  try {
+    const state = JSON.parse(localStorage.getItem(FORM_KEY) || '{}');
+    document.querySelectorAll('input, textarea').forEach(el => {
+      if (el.type === 'checkbox' || el.type === 'radio') {
+        if (state[el.name + '__' + el.value]) el.checked = true;
+      } else if (el.id && state[el.id]) {
+        el.value = state[el.id];
+      }
+    });
+  } catch(e){}
+}
+loadState();
+document.addEventListener('change', saveState);
+document.addEventListener('input', saveState);
+
+function exportPDF() {
+  document.querySelectorAll('input[type="checkbox"], input[type="radio"]').forEach(el => {
+    if (el.checked) el.setAttribute('checked', 'checked');
+    else el.removeAttribute('checked');
+  });
+  document.querySelectorAll('input[type="text"], textarea').forEach(el => {
+    el.setAttribute('value', el.value);
+    if (el.tagName === 'TEXTAREA') el.textContent = el.value;
+  });
+
+  document.body.classList.add('pdf-mode');
+  const el = document.getElementById('page');
+  const owner = document.getElementById('ownerName').value || '匿名';
+  const today = new Date().toISOString().slice(0,10);
+  const filename = '如狗殼以一叫好棉_業主確認單_'+owner+'_'+today+'.pdf';
+
+  html2pdf().set({
+    margin: [10, 10, 10, 10],
+    filename: filename,
+    image: { type: 'jpeg', quality: 0.95 },
+    html2canvas: { scale: 2, useCORS: true, letterRendering: true, backgroundColor: '#ffffff' },
+    jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+    pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
+  }).from(el).save().then(() => {
+    document.body.classList.remove('pdf-mode');
+  }).catch(err => {
+    console.error(err);
+    alert('匯出 PDF 發生錯誤，可使用瀏覽器列印功能（Ctrl+P）另存為 PDF。');
+    document.body.classList.remove('pdf-mode');
+  });
+}
+</script>
+
+</body>
+</html>
